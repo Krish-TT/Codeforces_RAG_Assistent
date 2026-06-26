@@ -1,4 +1,4 @@
-# 🏋️ Codeforces Coach — AI-Powered Practice Recommender
+# Codeforces Coach - AI-Powered Practice Recommender
 
 An intelligent Codeforces training system that analyzes a user's competitive programming history, classifies them into a behavioral archetype using **Gaussian Mixture Models (GMM)**, and recommends personalized practice problems using a **two-stage retrieval + XGBoost ranking pipeline** — all presented by a persona-driven **Gemini LLM coach**.
 
@@ -76,7 +76,7 @@ cf_coach/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -144,7 +144,7 @@ Both endpoints accept `{"handle": "codeforces_username"}`.
 
 ---
 
-## 🧠 How the Recommendation Pipeline Works
+## How the Recommendation Pipeline Works
 
 1. **ML Profile** (`ml_engine.py`): Scrapes Codeforces API for all user submissions, engineers 16 features (accuracy, TLE rate, tag preferences, tilt speed, etc.), scales them, and classifies into 1 of 10 behavioral archetypes via a pre-trained GMM.
 
@@ -177,7 +177,7 @@ Both endpoints accept `{"handle": "codeforces_username"}`.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Backend**: FastAPI, Uvicorn
 - **ML**: scikit-learn (GMM), XGBoost, Pandas
@@ -185,6 +185,7 @@ Both endpoints accept `{"handle": "codeforces_username"}`.
 - **LLM**: Google Gemini 2.5 Flash
 - **Frontend**: Vanilla HTML/CSS/JS with glassmorphism design
 
+## Made in collaboration with Aditya , Nischay , Raghav and me.😊
 ---
 
 ## 📝 License
